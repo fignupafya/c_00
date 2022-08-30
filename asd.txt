@@ -237,6 +237,7 @@ fi
 # some more ls aliases
 alias ii='cd ~/Desktop'
 alias c='clear'
+alias fupug='echo "!!UPDATE!!"&&sudo apt update -y&& echo "!!UPGRADE!!"&&sudo apt full-upgrade -y'
 
 # kendi tanimladiklarim
 ll(){
