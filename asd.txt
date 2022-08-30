@@ -287,7 +287,23 @@ norminette -R CheckForbiddenSourceHeader $@
 }
 
 
+mkdirn(){
+for item in {$2..$3} ; do 
+if [ $item -gt 9 ]; then
+mkdir "$1$item"
+else
+mkdir "$1"0"$item";
+fi; done;
+}
 
+touchn(){
+for item in {$2..$3} ; do 
+if [ $item -gt 9 ]; then
+touch "$1$item"
+else
+touch "$1"0"$item";
+fi; done;
+}
 
 # enable auto-suggestions based on the history
 #if [ -f /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh ]; #then
