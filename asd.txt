@@ -71,7 +71,6 @@ touch "$1"0"$item";
 fi; done;
 }
 
-
 extkur(){
 link1=https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=tr
 link2=https://chrome.google.com/webstore/detail/video-speed-manager/fkopaaikpmfhpmoobnmklgmcgmhgfkcd
@@ -79,10 +78,10 @@ link3=https://chrome.google.com/webstore/detail/hover-zoom%20/pccckmaobkjjboncdf
 link4=https://chrome.google.com/webstore/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh
 link5=https://chrome.google.com/webstore/detail/quick-translate/gobpkdmjnhpopmpddhmhmbhkiienpfdo
 
-open "$link1"
-open "$link2"
-open "$link3"
-open "$link4"
-open "$link5"
+open "$link1" &
+open "$link2" &
+open "$link3" &
+open "$link4" &
+open "$link5" &
 
 }
