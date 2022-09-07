@@ -2,7 +2,10 @@
 
 alias ii='cd ~/Desktop'
 alias c='clear'
+alias C='clear'
 alias fupug='echo "!!UPDATE!!"&&sudo apt update -y&& echo "!!UPGRADE!!"&&sudo apt full-upgrade -y'
+alias ld='ls -d */'
+alias ldl='ls -dl */'
 
 # kendi tanimladiklarim
 ll(){
@@ -49,7 +52,7 @@ gcc -Wall -Wextra -Werror $@ && ./a.out > res.txt && rm a.out && leaf res.txt
 }
 
 norm(){
-norminette -R CheckForbiddenSourceHeader $@
+c && norminette -R CheckForbiddenSourceHeader $@
 }
 
 
@@ -70,6 +73,11 @@ else
 touch "$1"0"$item";
 fi; done;
 }
+
+
+
+
+
 
 extkur(){
 link1=https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=tr
