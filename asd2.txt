@@ -265,6 +265,7 @@ alias C='clear'
 alias fupug='echo "!!UPDATE!!"&&sudo apt update -y&& echo "!!UPGRADE!!"&&sudo apt full-upgrade -y'
 alias ld='ls -d */'
 alias ldl='ls -dl */'
+alias calc='bc'
 
 # kendi tanimladiklarim
 ll(){
