@@ -334,9 +334,9 @@ touch "$1"0"$item";
 fi; done;
 }
 
-
-
-
+cleanpush(){
+rm -rf ./.git && git init && git remote add origin $1 && git add ex* && git commit -m ":)" && git push -u --force origin master
+}
 
 
 extkur(){
